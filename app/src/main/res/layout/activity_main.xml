@@ -154,7 +154,7 @@
         android:layout_marginBottom="5dp"
         android:ems="10"
         android:hint="put in your amount"
-        android:inputType="textPersonName"
+        android:inputType="number"
         app:layout_constraintBottom_toTopOf="@+id/partySizeValue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView"
@@ -170,7 +170,7 @@
         android:layout_marginBottom="190dp"
         android:ems="10"
         android:hint="how many of yall?"
-        android:inputType="textPersonName"
+        android:inputType="number"
         app:layout_constraintBottom_toTopOf="@+id/fifteenPercentTipValue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView3"
@@ -203,7 +203,7 @@
         app:layout_constraintTop_toBottomOf="@+id/partySizeValue" />
 
     <EditText
-        android:id='@+id/"twentyfivePercentTipValue'
+        android:id="@+id/twentyfivePercentTipValue"
         android:layout_width="51dp"
         android:layout_height="44dp"
         android:layout_marginTop="187dp"
@@ -213,8 +213,10 @@
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/twentyfivePercentTotalValue"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/textView12"
-        app:layout_constraintTop_toBottomOf="@+id/partySizeValue" />
+        app:layout_constraintTop_toBottomOf="@+id/partySizeValue"
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/fifteenPercentTotalValue"
@@ -233,8 +235,8 @@
 
     <EditText
         android:id="@+id/twentyPercentTotalValue"
-        android:layout_width="54dp"
-        android:layout_height="36dp"
+        android:layout_width="58dp"
+        android:layout_height="44dp"
         android:layout_marginTop="85dp"
         android:layout_marginEnd="25dp"
         android:ems="10"
@@ -242,19 +244,6 @@
         app:layout_constraintEnd_toStartOf="@+id/textView13"
         app:layout_constraintStart_toEndOf="@+id/textView10"
         app:layout_constraintTop_toBottomOf="@+id/twentyPercentTipValue" />
-
-    <EditText
-        android:id="@+id/twentyfivePercentTotalValue"
-        android:layout_width="49dp"
-        android:layout_height="39dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="85dp"
-        android:layout_marginEnd="32dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView13"
-        app:layout_constraintTop_toBottomOf="@+id/&quot;twentyfivePercentTipValue" />
 
     <Button
         android:id="@+id/buttonCompute"
@@ -269,5 +258,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/partySizeValue" />
+
+    <EditText
+        android:id="@+id/twentyfivePercentTotalValue"
+        android:layout_width="66dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="118dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView13" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
