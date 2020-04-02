@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+import com.testfairy.TestFairy;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        TestFairy.begin(this, "SDK-B7UcXaG7");
 
         checkAmountValue = findViewById(R.id.checkAmountValue);
         partySizeValue = findViewById(R.id.partySizeValue);
